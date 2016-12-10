@@ -1,0 +1,66 @@
+<div id="%s" class="slide-block active inactive red-block" style="z-index: 0;">
+    <div class="holder">
+        <div class="frame">
+            <div class="title">
+                <h2><a href="catalogDetail?catalogId=%s">%s</a><img width="34" height="27" alt="" src="res/images/mask.png"></h2>
+                <a class="open-close" href="#"><span>Close block</span><em>Open block</em></a>
+                <div class="edit-btn alt-edit-btn">
+                    <div class="drop">
+                        <div class="drop-holder">
+                            <div class="drop-frame">
+                                <div class="drop-c">
+                                    <ul>
+                                        <li class="edit"><a onclick="editCatalog(%s);" href="#">EDIT</a></li>
+
+                                        <li class="history"><a href="#">History</a></li>
+                                        <li class="marge"><a href="#">MERGE WITH...</a></li>
+                                        <li class="export"><a href="#">EXPORT</a>
+                                            <div class="drop-2">
+                                                <div class="drop-2-holder">
+                                                    <div class="drop-2-frame">
+                                                        <div class="drop-2-c">
+                                                            <ul>
+                                                                <li class="xml"><a href="#">XML</a></li>
+                                                                <li class="xls"><a href="#">XLS</a></li>
+                                                                <li class="csv"><a href="#">CSV</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="reject"><a href="#">reject</a></li>
+                                        <li class="del"><a href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="status">
+                <span><a target="_blank" href="http://localhost:5001/catalog/api/catalogs/download/reportType/pdf/catalogId/%s"> View 1 errors</a>, Items Pending Approval</span>
+            </div>
+            <div class="block">
+                <dl>
+                    <dt>Version Number:</dt>
+                    <dd>1&nbsp;&nbsp;&nbsp;<a href="#">(Previous Versions)</a></dd>
+                    <dt>Created On:</dt>
+                    <dd>%s</dd>
+                    <dt>Created By:</dt>
+                    <dd>%s</dd>
+                    <dt>Type:</dt>
+                    <dd>%s</dd>
+                    <dt>Method:</dt>
+                    <dd>%s</dd>
+                    <dt>Number of Items:</dt>
+                    <dd>%d</dd>
+                    <dt>Status:</dt>
+                    <dd id="%sapprovedStatus">%s</dd>
+                    <dt>Active:</dt>
+                    <dd>%s</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>

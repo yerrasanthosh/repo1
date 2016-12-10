@@ -1,0 +1,168 @@
+body {
+    background-color: #FFFFFF;
+    font-family: Verdana,Helvetica,sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0;
+}
+
+img {
+    border: 0 none;
+}
+
+#content-wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#header {
+	height: 95px;
+}
+
+#logo {
+    float: left;
+    width: 210px;
+    margin-top: 10px;
+    margin: 11px 0 0;
+    padding-left: 7px;
+
+}
+
+#horizonial-bar {
+	height: 30px;
+	border: none;
+}
+
+#login-wrapper {
+	min-height: 300px;
+	font-size: 0.85em;
+	padding: 7px;
+	background-color: #DADADA;
+}
+
+#login-block {
+	min-height: 300px;
+	font-size: 11px;
+	background-color: #FFFFFF;
+	padding: 15px 0;
+}
+
+#login-block div {
+/*	border: 1px solid;*/
+}
+#login-block h3 {
+	margin: 0;
+	padding: 5px 10px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#block-left {
+	width: 195px;
+	min-height: 300px;
+	padding: 0 7px;
+	line-height: 1.35em;
+}
+
+#block-left label{
+	font-weight: bold;
+}
+
+#block-main {
+	width: 510px;
+	min-height: 300px;
+	border-left: 1px dotted #DADADA;
+	border-right: 1px dotted #DADADA;
+	padding: 0 7px;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+#block-main .desc {
+	min-height: 22px;
+	margin: 22px 0 0 25px;
+}
+
+#block-main .field-set{
+	display: block;
+	clear: both;
+    list-style: none outside none;
+    margin: 0;
+}
+
+#block-main .field-set li{
+	display: block;
+    padding-bottom: 7px;
+}
+
+#block-main .field-set .label{
+	display: block;
+	width: 110px;
+	padding: 4px 7px;
+}
+
+#block-main .field-set input{
+	padding: 2px;
+}
+
+#block-right {
+	width: 195px;
+	min-height: 300px;
+	padding: 0 7px;
+}
+
+#msg-box {
+	margin-top: 10px;
+	padding: 3px 10px 3px 15px;
+	color: #FF0000;
+	border: none;
+	font-weight: bold;
+}
+
+#msg-box span{
+	float: left;
+	margin: 2px 5px 0 0;
+}
+
+#footer {
+	height: 50px;
+	font-size: 0.8em;
+}
+
+.ft-left {
+	float: left;
+}
+
+.ft-right {
+	float: right;
+}
+
+.txt-h-left {
+	text-align: left;
+}
+
+.txt-h-right {
+	text-align: right;
+}
+
+.txt-h-center {
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+.clear-left {
+	clear: left;
+}
+
+.clear-right {
+	clear: right;
+}
+
+.errorblock {
+    color: #ff0000;
+    padding: 8px;
+    margin: 16px;
+}

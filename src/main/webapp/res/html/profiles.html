@@ -1,0 +1,747 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SmartOCI</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../css/jquery-ui-1.8.22.custom.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="../css/colorbox.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="../css/all.css" />
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../js/jcf.js"></script>
+    <script type="text/javascript" src="../js/jcf.scrollable.js"></script>
+    <script type="text/javascript" src="../js/jquery.main.js"></script>
+    <script type="text/javascript" src="../js/jcf.select.js"></script>
+    <script type="text/javascript" src="../js/jcf.file.js"></script>
+    <script type="text/javascript">
+        jcf.lib.domReady(function(){
+            jcf.customForms.replaceAll();
+        });
+    </script>
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="header">
+        <div class="holder">
+            <div class="panel">
+                <strong class="logo"><a href="#">SmartOCI</a></strong>
+                <ul class="add-nav">
+                    <li>
+                        <a class="user" href="#">Welcome,<strong>USERNAME</strong></a>
+                        <ul>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Selected</a></li>
+                            <li><a href="#">Lorem</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Messages (0)</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a class="cart" href="#">Cart: 0 Items ($0.00)</a></li>
+                </ul>
+                <form action="#" class="search-form">
+                    <fieldset>
+                        <label for="text-field">SEARCH</label>
+                        <input id="text-field" type="text" value="" />
+                        <select>
+                            <option selected="selected">Catalog Manager</option>
+                            <option>Ather Catalog</option>
+                        </select>
+                        <input type="submit" value="Submit" />
+                        <a href="#" class="link">Advanced Search</a>
+                    </fieldset>
+                </form>
+            </div>
+            <ul id="nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SHOPPING CART</a></li>
+                <li><a href="#">STATISTICS</a></li>
+                <li><a href="#">FAVORITES</a></li>
+                <li><a href="#" class="active">MANAGE</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+    <div class="section">
+        <ul class="breadcrumbs">
+            <li><a href="#">smartOCI</a></li>
+            <li><a href="#">Catalog Manager</a></li>
+            <li>Catalog Overview</li>
+        </ul>
+        <div class="video-btn-holder">
+            <img src="images/img-1.gif" alt="" width="26" height="27" />
+            <a href="#" class="btn"><span><em>Help video</em></span></a>
+        </div>
+    </div>
+    <div class="main-holder">
+    <div id="content">
+    
+    <div class="content-block toggle-block active" id="create-item-section">
+    <div class="headline">
+        <h2><a href="#" class="open-close">Profiles</a></h2>
+    </div>
+    <div class="block">
+    <div class="content editable-widget">
+    <div class="top-box">
+		<div class="btn-holder">
+			<ul class="options ">
+	       		<li>
+	            	<a href="#create-profile" class="btn-create-profile open-popup"><span><em>Create Profile</em></span></a>
+				</li>
+			</ul>
+		</div>
+    </div>
+    <div class="scrollable-area anyscrollable">
+    <div class="text">
+    <table class="table-data">
+    <thead>
+    <tr>
+        <th class="td-select"><input type="checkbox" name="check-all" id="check1" /><label for="check1"></label></th>
+        <th class="a-left">Profile Name</th>
+        <th>Profile Description</th>
+        <th>Created On</th>
+        <th>Created By</th>
+        <th class="td-last">Active</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="td-select"><input type="checkbox" name="check" id="check2" /><label for="check2"></label></td>
+        <td class="a-left td-description">
+            <div class="field">
+                <span>Hex Nut Grade 2ea</span>
+                <input type="text" value="Hex Nut Grade 2ea" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>454738</span>
+                <input type="text" value="454738" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>2.89</span>
+                <input type="text" value="2.89" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>31161727</span>
+                <input type="text" value="31161727" />
+            </div>
+        </td>
+        <td class="td-last">Approved</td>
+    </tr>
+    <tr>
+        <td class="td-select"><input type="checkbox" name="check" id="check3" /><label for="check3"></label></td>
+        <td class="a-left td-description">
+            <div class="field">
+                <span>Hex Nut Grade 2ea</span>
+                <input type="text" class="default" value="Hex Nut Grade 2ea" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>454738</span>
+                <input type="text" class="default" value="454738" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>2.89</span>
+                <input type="text" class="default" value="2.89" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>31161727</span>
+                <input type="text" class="default" value="31161727" />
+            </div>
+        </td>
+        <td class="td-last">Approved</td>
+    </tr>
+    <tr>
+        <td class="td-select"><input type="checkbox" name="check" id="check4" /><label for="check4"></label></td>
+        <td class="a-left td-description">
+            <div class="field">
+                <span>Hex Nut Grade 2ea</span>
+                <input type="text" class="default" value="Hex Nut Grade 2ea" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>454738</span>
+                <input type="text" class="default" value="454738" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>2.89</span>
+                <input type="text" class="default" value="2.89" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>31161727</span>
+                <input type="text" class="default" value="31161727" />
+            </div>
+        </td>
+        <td class="td-last">Approved</td>
+    </tr>
+    <tr>
+        <td class="td-select"><input type="checkbox" name="check" id="check5" /><label for="check5"></label></td>
+        <td class="a-left td-description">
+            <div class="field">
+                <span>Hex Nut Grade 2ea</span>
+                <input type="text" class="default" value="Hex Nut Grade 2ea" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>454738</span>
+                <input type="text" class="default" value="454738" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>2.89</span>
+                <input type="text" class="default" value="2.89" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>31161727</span>
+                <input type="text" class="default" value="31161727" />
+            </div>
+        </td>
+        <td class="td-last">Approved</td>
+    </tr>
+    <tr>
+        <td class="td-select"><input type="checkbox" name="check" id="check6" /><label for="check6"></label></td>
+        <td class="a-left td-description">
+            <div class="field">
+                <span>Hex Nut Grade 2ea</span>
+                <input type="text" class="default" value="Hex Nut Grade 2ea" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>454738</span>
+                <input type="text" class="default" value="454738" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>2.89</span>
+                <input type="text" class="default" value="2.89" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>31161727</span>
+                <input type="text" class="default" value="31161727" />
+            </div>
+        </td>
+        <td class="td-last">Approved</td>
+    </tr>
+    <tr>
+        <td class="td-select"><input type="checkbox" name="check" id="check7" /><label for="check7"></label></td>
+        <td class="a-left td-description">
+            <div class="field">
+                <span>Hex Nut Grade 2ea</span>
+                <input type="text" class="default" value="Hex Nut Grade 2ea" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>454738</span>
+                <input type="text" class="default" value="454738" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>2.89</span>
+                <input type="text" class="default" value="2.89" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>31161727</span>
+                <input type="text" class="default" value="31161727" />
+            </div>
+        </td>
+        <td class="td-last">Approved</td>
+    </tr>
+    <tr>
+        <td class="td-select"><input type="checkbox" name="check" id="check8" /><label for="check8"></label></td>
+        <td class="a-left td-description">
+            <div class="field">
+                <span>Hex Nut Grade 2ea</span>
+                <input type="text" class="default" value="Hex Nut Grade 2ea" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>454738</span>
+                <input type="text" class="default" value="454738" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>2.89</span>
+                <input type="text" class="default" value="2.89" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>31161727</span>
+                <input type="text" class="default" value="31161727" />
+            </div>
+        </td>
+        <td class="td-last">Approved</td>
+    </tr>
+    <tr>
+        <td class="td-select"><input type="checkbox" name="check" id="check9" /><label for="check9"></label></td>
+        <td class="a-left td-description">
+            <div class="field">
+                <span>Hex Nut Grade 2ea</span>
+                <input type="text" class="default" value="Hex Nut Grade 2ea" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>454738</span>
+                <input type="text" class="default" value="454738" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>2.89</span>
+                <input type="text" class="default" value="2.89" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>31161727</span>
+                <input type="text" class="default" value="31161727" />
+            </div>
+        </td>
+        <td class="td-last">Approved</td>
+    </tr>
+    <tr>
+        <td class="td-select"><input type="checkbox" name="check" id="check10" /><label for="check10"></label></td>
+        <td class="a-left td-description">
+            <div class="field">
+                <span>Hex Nut Grade 2ea</span>
+                <input type="text" class="default" value="Hex Nut Grade 2ea" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>454738</span>
+                <input type="text" class="default" value="454738" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>2.89</span>
+                <input type="text" class="default" value="2.89" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>31161727</span>
+                <input type="text" class="default" value="31161727" />
+            </div>
+        </td>
+        <td class="td-last">Approved</td>
+    </tr>
+    <tr>
+        <td class="td-select"><input type="checkbox" name="check" id="check11" /><label for="check11"></label></td>
+        <td class="a-left td-description">
+            <div class="field">
+                <span>Hex Nut Grade 2ea</span>
+                <input type="text" class="default" value="Hex Nut Grade 2ea" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>454738</span>
+                <input type="text" class="default" value="454738" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>2.89</span>
+                <input type="text" class="default" value="2.89" />
+            </div>
+        </td>
+        <td>
+            <div class="field">
+                <span>31161727</span>
+                <input type="text" class="default" value="31161727" />
+            </div>
+        </td>
+        <td class="td-last">Approved</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <div class="bottom-data">
+        <div class="pager">
+            <span>Page 1 of 49 </span>
+            <ul>
+                <li><a href="#" class="btn-prev"></a></li>
+                <li><a href="#" class="btn-next"></a></li>
+            </ul>
+        </div>
+        <strong class="pages">Total Records: 1-49 of 49</strong>
+    </div>
+    <div class="move-items">
+    </div>
+    <div class="function">
+        <ul>
+            <li><a href="#" class="ico-approve"><span><em>Activate</em></span></a></li>
+            <li><a href="#" class="ico-reject"><span><em>Deactivate</em></span></a></li>
+            <li><a href="#delete" class="ico-delete open-popup"><span><em>DELETE</em></span></a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="sidebar">
+        <ul class="sub-nav">
+            <li><a href="index.html" class="ico-back"><span>BACK</span></a></li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+    <div id="footer">
+        <strong class="logo"><a href="#"></a></strong>
+        <span class="copy">&copy; All right reserved. NetSol Tehnologies, Inc</span>
+    </div>
+</div>
+
+<div class="lightbox-section">
+    <div class="lightbox lightbox-small" id="publish">
+        <div class="holder">
+            <div class="frame">
+                <div class="title">
+                    <a href="#" class="close">Close</a>
+                    <h2>Publish Confirmation</h2>
+                </div>
+                <div class="content">
+                    <p>Please click “PUBLISH”  to confirm that you would like to publish the following item:</p>
+                    <p><strong>[lorem ipsum dolor sit amet]</strong></p>
+                </div>
+                <div class="btns-holder">
+                    <div class="btns-frame">
+                        <a href="#" class="btn btn-green"><span>PUBLISH</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lightbox-section">
+    <div class="lightbox lightbox-small" id="delete">
+        <div class="holder">
+            <div class="frame">
+                <div class="title">
+                    <a href="#" class="close">Close</a>
+                    <h2>Deletion Confirmation</h2>
+                </div>
+                <div class="content">
+                    <p>Please click "DELETE" to confirm that you would like to remove the selected item(s).</p>
+                </div>
+                <div class="btns-holder">
+                    <div class="btns-frame">
+                        <a href="#" class="btn btn-red"><span>DELETE</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lightbox-section">
+    <div class="lightbox" id="create-approver">
+        <div class="holder">
+            <div class="frame">
+                <div class="title">
+                    <a href="#" class="close">Close</a>
+                    <h2>Create Approver</h2>
+                </div>
+                <form action="#" class="form-create">
+                    <fieldset>
+                        <h3>USER SETTINGS</h3>
+                        <div class="area">
+                            <div class="row">
+                                <label for="first-name"><span>*</span>First Name:</label>
+                                <input type="text" value="" id="first-name" />
+                            </div>
+                            <div class="row">
+                                <label for="last-name"><span>*</span>Last Name:</label>
+                                <input type="text" value="" id="last-name" />
+                            </div>
+                            <div class="row">
+                                <label for="e-mail"><span>*</span>E-mail:</label>
+                                <input type="text" value="" id="e-mail" />
+                            </div>
+                        </div>
+                        <div class="btns-holder">
+                            <a href="#" class="btn-cancel">Cancel</a>
+                            <input type="submit" value="Save" />
+                            <p><span class="required">* </span>Required Field</p>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lightbox-section">
+    <div class="lightbox" id="create-profile">
+        <div class="holder">
+            <div class="frame">
+                <div class="title">
+                    <a href="#" class="close">Close</a>
+                    <h2>Create Profile</h2>
+                </div>
+                <form action="#" class="form-create">
+                    <fieldset>
+                        <h3>PROFILE SETTINGS</h3>
+                        <div class="area">
+                            <div class="row">
+                                <label for="profile-name"><span>*</span>Profile Name:</label>
+                                <input type="text" value="" id="profile-name" class="input2" />
+                            </div>
+                            <div class="row">
+                                <label for="profile-description"><span>*</span>Profile Description:</label>
+                                <textarea id="profile-description" cols="30" rows="10" class="textarea"></textarea>
+                            </div>
+                            <div class="row">
+                                <label for="rating">Product Rating:</label>
+                                <input type="checkbox" value="" name="rating" id="rating" />
+                            </div>
+                            <div class="row">
+                                <label>Active:</label>
+                                <select class="alt-select choose-tab-select">
+                                    <option value="" title="#area-1">Yes</option>
+                                    <option value="" title="#area-2">No</option>
+                                </select>
+                            </div>
+                        </div>
+						<h4>Associated Catalogs</h4>
+                        <div class="area alt-area">
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        	
+                        </div>
+                        
+                        <div class="btns-holder">
+                            <a href="#" class="btn-cancel">Cancel</a>
+                            <input type="submit" value="Save" />
+                            <p><span class="required">* </span>Required Field</p>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lightbox-section">
+    <div class="lightbox" id="create-custom-field">
+        <div class="holder">
+            <div class="frame">
+                <div class="title">
+                    <a href="#" class="close">Close</a>
+                    <h2>Create Custom Field</h2>
+                </div>
+                <form action="#" class="form-create">
+                    <fieldset>
+                        <h3>Custom field settings</h3>
+                        <div class="area">
+                            <div class="row">
+                                <label for="field-name"><span>*</span>Field Name:</label>
+                                <input type="text" value="" id="field-name" class="input2" />
+                            </div>
+                            <div class="row">
+                                <label for="display-name"><span>*</span>Display Name:</label>
+                                <input type="text" value="" id="display-name" class="input2" />
+                            </div>
+                            <div class="row">
+                                <label for="description">Description</label>
+                                <textarea id="description" cols="30" rows="10" class="textarea2"></textarea>
+                            </div>
+                            <div class="row">
+                                <label>Type:</label>
+                                <select class="alt-select choose-tab-select">
+                                    <option value="" title="#area-1">Drop Down List</option>
+                                    <option value="" title="#area-2">Input Field</option>
+                                    <option value="" title="#area-3">Fixed Value</option>
+                                    <option value="" title="#area-4">Flag</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h4>Custom Field Defaults</h4>
+                        <div class="area alt-area">
+                            <div class="area-holder" id="area-1">
+                                <div class="row">
+                                    <label class="alt-label">Value(s):</label>
+                                    <select class="alt-select">
+                                        <option value="">&nbsp;</option>
+                                    </select>
+                                    <ul class="add-btns">
+                                        <li><a href="#" class="ico-add"></a></li>
+                                        <li><a href="#" class="ico-del"></a></li>
+                                        <li><a href="#" class="ico-edit"></a></li>
+                                    </ul>
+                                    <label class="alt-label">OCI Field Mapping:</label>
+                                    <select class="alt-select">
+                                        <option value="">&nbsp;</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <label for="parameter1">Required:</label>
+                                    <input type="checkbox" name="check-parameter" id="parameter1"/>
+                                </div>
+                                <div class="row">
+                                    <label for="parameter2">Post Filter Attribute:</label>
+                                    <input type="checkbox" name="check-parameter" id="parameter2"/>
+                                </div>
+                                <div class="row">
+                                    <label for="parameter3">Searchable:</label>
+                                    <input type="checkbox" name="check-parameter" id="parameter3"/>
+                                </div>
+                            </div>
+                            <div class="area-holder" id="area-2">
+                                <div class="row">
+                                    <label class="alt-label">Default Value:</label>
+                                    <textarea cols="30" rows="10" class="textarea3"></textarea>
+                                    <label class="alt-label">OCI Field Mapping:</label>
+                                    <select class="alt-select">
+                                        <option value="">&nbsp;</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <label for="parameter2-1">Required:</label>
+                                    <input type="checkbox" name="check-parameter2" id="parameter2-1"/>
+                                </div>
+                            </div>
+                            <div class="area-holder" id="area-3">
+                                <div class="row">
+                                    <label class="alt-label">Default Value:</label>
+                                    <textarea cols="30" rows="10" class="textarea3"></textarea>
+                                    <label class="alt-label">OCI Field Mapping:</label>
+                                    <select class="alt-select">
+                                        <option value="">&nbsp;</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <label for="parameter3-1">Post Filter Attribute:</label>
+                                    <input type="checkbox" name="check-parameter3" id="parameter3-1"/>
+                                </div>
+                                <div class="row">
+                                    <label for="parameter3-2">Searchable:</label>
+                                    <input type="checkbox" name="check-parameter3" id="parameter3-2"/>
+                                </div>
+                            </div>
+                            <div class="area-holder" id="area-4">
+                                <div class="row">
+                                    <label class="alt-label">Default Value:</label>
+                                    <textarea cols="30" rows="10" class="textarea3"></textarea>
+                                    <label class="alt-label">OCI Field Mapping:</label>
+                                    <select class="alt-select">
+                                        <option value="">&nbsp;</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="alt-label">Apply Search Results Boost:</label>
+                                        <select class="alt-select">
+                                            <option value="">&nbsp;</option>
+                                        </select>
+                                    </div>
+                                    <label for="parameter4-1">Search Results Filter:</label>
+                                    <input type="checkbox" name="check-parameter4" id="parameter4-1"/>
+                                </div>
+                                <div class="row">
+                                    <label for="parameter4-2">Default Search Filter On:</label>
+                                    <input type="checkbox" name="check-parameter4" id="parameter4-2"/>
+                                </div>
+                                <div class="alt-row">
+                                    <label class="alt-label">Flag Icon:</label>
+                                    <div class="popup-holder">
+                                        <a href="#" class="btn-add-open open">add</a>
+                                        <div class="popup">
+                                            <div class="popup-frame">
+                                                <div class="popup-inner">
+                                                    <div class="top">
+                                                        <a href="#" class="alt-close">Close</a>
+                                                        <h3>Upload File</h3>
+                                                    </div>
+                                                    <div class="row">
+                                                        <input type="file" value="Enter Location of file or URL" />
+                                                    </div>
+                                                    <div class="row" style="display:none;">
+                                                        <img src="images/ico01.png" width="39" height="39" alt="image description" />
+                                                        <a href="#" class="btn-upload">UPload</a>
+                                                        <div class="txt">
+                                                            <span class="size"> 0.59 KB</span>
+                                                            <p>icon_photo_upload_16px.gif</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" style="display:none;">
+                                                        <img src="images/ico01.png" width="39" height="39" alt="image description" />
+                                                        <div class="txt">
+                                                            <div class="line-box"><span class="line" style="width:70%"></span></div>
+                                                            <a href="#" class="btn-cancel">Cancel</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <em class="text">No File Chosen. Click the add button to the left, or drag and drop your file here.</em>
+                                    </div>
+                                    <div class="upload-file" style="display:none;">
+                                        <div class="upload-file-holder">
+                                            <img src="images/ico01.png" width="39" height="39" alt="image description" />
+                                            <p>icon_photo_upload_16px.gif</p>
+                                        </div>
+                                        <a href="#" class="btn-del"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btns-holder">
+                            <a href="#" class="btn-cancel">Cancel</a>
+                            <input type="submit" value="Save" />
+                            <p><span class="required">* </span>Required Field</p>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+# OS generated files #
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# use glob syntax.
+*.ser
+*.class
+*~
+*.bak
+*.off
+*.old
+
+# building
+target
+build
+null
+tmp*
+dist
+test-output
+
+# other scm
+.svn
+.CVS
+.hg*
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea
+
+# Eclipse
+.project
+.classpath
+.settings
+
+#Netbeans
+nbproject
+conf/adminui.properties
+
+/conf
+
+/bin/
+conf/admin-bk-2.properties

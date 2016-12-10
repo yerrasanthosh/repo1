@@ -1,0 +1,487 @@
+/* Css classes for error label appearing during validation */
+/*label.error {float: none; color: red; padding-left: 5em; vertical-align: top; display: block; font-style: italic; font: italic}*/
+#item-details-form label.error {float: none; color: red; vertical-align: top; display: block; font-style: italic; font: italic;text-align: left; }
+#item-fulfillment-form label.error {float: none; color: red; vertical-align: top; display: block; font-style: italic; font: italic;text-align: left; }
+#pricing-form-fields label.error {float: none; color: red; vertical-align: top; display: block; font-style: italic; font: italic;text-align: left; }
+
+#item-details-form label.valid {
+    width: 24px;
+    height: 24px;
+    background: url("../images/valid.png") center left no-repeat;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    position:relative;
+}
+
+#item-fulfillment-form label.valid {
+    width: 24px;
+    height: 24px;
+    background: url("../images/valid.png") center left no-repeat;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    position:relative;
+}
+
+#pricing-form-fields label.valid {
+    width: 24px;
+    height: 24px;
+    background: url("../images/valid.png") center left no-repeat;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    position:relative;
+}
+
+.row.warning>label,.ro.warning .help-block,.ro.warning .help-inline{color:#c09853;}
+.row.warning input,.ro.warning select,.ro.warning textarea{color:#c09853;border-color:#c09853;}.ro.warning input:focus,.ro.warning select:focus,.ro.warning textarea:focus{border-color:#a47e3c;-webkit-box-shadow:0 0 6px #dbc59e;-moz-box-shadow:0 0 6px #dbc59e;box-shadow:0 0 6px #dbc59e;}
+.row.warning .input-prepend .add-on,.row.warning .input-append .add-on{color:#c09853;background-color:#fcf8e3;border-color:#c09853;}
+.row.error>label,.row.error .help-block,.row.error .help-inline{color:#b94a48;}
+.row.error input,.row.error select,.row.error textarea{color:#b94a48;border-color:#b94a48;}.row.error input:focus,.row.error select:focus,.row.error textarea:focus{border-color:#953b39;-webkit-box-shadow:0 0 6px #d59392;-moz-box-shadow:0 0 6px #d59392;box-shadow:0 0 6px #d59392;}
+.row.error .input-prepend .add-on,.row.error .input-append .add-on{color:#b94a48;background-color:#f2dede;border-color:#b94a48;}
+.row.success>label,.row.success .help-block,.row.success .help-inline{color:#468847;}
+.row.success input,.row.success select,.row.success textarea{color:#468847;border-color:#468847;}.row.success input:focus,.row.success select:focus,.row.success textarea:focus{border-color:#356635;-webkit-box-shadow:0 0 6px #7aba7b;-moz-box-shadow:0 0 6px #7aba7b;box-shadow:0 0 6px #7aba7b;}
+.row.success .input-prepend .add-on,.row.success .input-append .add-on{color:#468847;background-color:#dff0d8;border-color:#468847;}
+
+#theEditCatalogNameId label.error {float: none; color: red; padding-left: 5em; vertical-align: top; display: block; font-style: italic; font: italic}
+#theCatalogNameId label.error {color: red; padding-left: 12em; vertical-align: top; display: block; font-style: italic; font: italic; width: 420px; padding-left: 308px; text-align: left;}
+#theCatalogFileId label.error {color: red; padding-left: 21em; vertical-align: top; display: block; font-style: italic; font: italic; width: 420px; padding-left: 308px; text-align: left;}
+#theImageFileId label.error {color: red; padding-left: 21em; vertical-align: top; display: block; font-style: italic; font: italic; width: 420px; padding-left: 308px; text-align: left;}
+#theSupplierFileId label.error {float: none; color: red; padding-left: 21em; vertical-align: top; display: block; font-style: italic; font: italic}
+
+#autocompleteDiv label.error {float: none; color: red; vertical-align: top; display: block; font-style: italic; font: italic; text-align: left; padding-left: 0em;}
+
+
+#customFieldNameId label.error {float: none; color: red; padding-left: 5em; vertical-align: top; display: block; font-style: italic; font: italic}
+#customFieldDisplayNameId label.error {float: none; color: red; padding-left: 5em; vertical-align: top; display: block; font-style: italic; font: italic}
+
+#theProfileNameId label.error {float: left; color: red; padding-left: 0em; vertical-align: top; display: block; font-style: italic; font: italic; text-align: left; width:140px}
+#theProfileDescId label.error {float: left; color: red; padding-left: 0em; vertical-align: top; display: block; font-style: italic; font: italic; width:54px}
+
+#createUserForm label.error {float: none; color: red; vertical-align: top; display: block; font-style: italic; font: italic; text-align: left;}
+
+#frmMyAccountDetails label.error {float: none; color: red; vertical-align: top; display: block; font-style: italic; font: italic; text-align: left;}
+
+#contentForm label.error {float: right; color: red; vertical-align: top; display: block; font-style: italic; font: italic; text-align: left; width: 209px; padding: 7px 0 0;}
+
+/* Overwrites the font size in datePicker time zone drop down list-box */
+#ui-datepicker-div .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+    font-size: 9px;
+}
+
+/* Overwrites the CatalogName input box only color in edit catalog overlay*/
+.lightbox input[type="text"] {
+    color: black;
+}
+
+.add-search-form input[type="button"] {
+    background: url("../images/bg-submit-3.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 0;
+    height: 24px;
+    line-height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -9999px;
+    width: 30px;
+}
+.add-search-form #resetBtn {
+    background: url("../images/reset.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 0;
+    height: 24px;
+    line-height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -9999px;
+    width: 60px;
+}
+.add-search-form #resetBtn1 {
+    background: url("../images/reset.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 0;
+    height: 24px;
+    line-height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -9999px;
+    width: 60px;
+}
+.settings-form input[type="button"] {
+    background: url("../images/sprite.png") no-repeat scroll -223px -1167px transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 11px;
+    height: 23px;
+    line-height: 21px;
+    margin: -5px 0 0;
+    padding: 0 0 0 10px;
+    text-transform: uppercase;
+    width: 76px;
+}
+.settings-form .text-fields input[type="button"] {
+    background: url("../images/sprite.png") no-repeat scroll -442px -881px transparent;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    width: 90px;
+}
+#profile_page_container_div .bottom-data {
+    color: #000000;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 9px 5px 9px 0;
+}
+
+
+#ProfilesContentDiv .function li{
+    padding: 20px 0 0;
+}
+
+.table-data .sorting {
+    padding: 0 0 0 10px;
+}
+
+#add-catalogs .lightbox-content {
+    /* height: 270px; */
+}
+
+#add-profiles-group .lightbox-content {
+    /* height: 270px; */
+}
+
+
+.bottom-data .btn-next-inactive {background:url(../images/sprite.png) no-repeat -178px -1196px; cursor: pointer;}
+.bottom-data .btn-prev-active {background:url(../images/sprite.png) no-repeat -159px -1196px; cursor: pointer;}
+
+.landing-page {
+    height: 400px;
+}
+
+.settings-form .alt-area1 {
+    cursor: pointer;
+    padding: 0;
+    vertical-align: middle;
+    margin:0 0 8px;
+    zoom:1;
+    background:#f8f8f8;
+}
+.settings-form .alt-area1 p {margin:0;}
+
+.settings-form .check-fields .label {
+    width:254px;
+}
+
+.settings-form .label {
+    width:154px;
+}
+
+.alt-close {
+    float:right;
+    overflow:hidden;
+    text-indent:-9999px;
+    position:relative;
+    z-index:5;
+    width:13px;
+    height:12px;
+    background:url(../images/sprite.png) no-repeat -537px -1173px;
+}
+
+.alt-close:hover {background-position:-581px -1173px;}
+
+.autocomplete-w1
+{ position:absolute; top:0px; left:0px; margin:6px 0 0 6px; /* IE6 fix: */ _background:none; _margin:1px 0 0 0; }
+.autocomplete { border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; overflow:hidden; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }
+
+
+.progress { position:relative; width:400px; border: 1px solid #777777; padding: 1px; border-radius: 3px; }
+.bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+.percent { position:absolute; display:inline-block; top:3px; left:48%; }
+
+.main-holder {
+    position:relative;
+    overflow:hidden;
+    padding:18px 0 0;
+    min-height:288px;
+}
+
+#scategory label.error {float: left; color: red; padding-left: 0em; vertical-align: top; display: block; font-style: italic; font: italic; width:120px}
+
+
+/** Multi select dropdown */
+/** Simple modifications needed for DropDownCheckList to take advantage of ThemeRoller settings */
+#autocompleteDiv {
+    margin-left: 170px;
+    margin-top: -30px;
+    padding-left: 11px;
+}
+
+#autocompleteDiv .ui-dropdownchecklist .ui-widget-content
+, .ui-dropdownchecklist .ui-widget-header {
+    border: none;
+    width: 650px;
+    border: 1px solid #CCC;
+}
+#autocompleteDiv .ui-dropdownchecklist-indent {
+    padding-left: 7px;
+}
+/* Font size of 0 on the -selector and an explicit medium on -text required to eliminate
+   descender problems within the containers and still have a valid size for the text */
+#autocompleteDiv .ui-dropdownchecklist-selector-wrapper
+, .ui-widget.ui-dropdownchecklist-selector-wrapper {
+    vertical-align: middle;
+    font-size: 0px;
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #B2B2B2;
+    width: 650px;
+    color: white;
+    height: 23px;
+}
+#autocompleteDiv .ui-dropdownchecklist-selector {
+	background: none repeat scroll 0 0 transparent;
+    padding: 1px 2px 2px 2px;
+    font-size: 0px;
+    border: none;
+    color: white;
+}
+#autocompleteDiv .ui-dropdownchecklist-text {
+    font-size: medium;
+    color: #353535;
+    float: left;
+    height: 15px;
+    font: 12px Arial, Helvetica, sans-serif;
+    padding: 4px 2px 4px 2px;
+	color: #353535;
+	white-space: nowrap;
+	text-align: left;
+}
+#autocompleteDiv .ui-dropdownchecklist-dropcontainer {
+	background: none repeat scroll 0 0 #FFFFFF;
+    color: white;
+}
+#autocompleteDiv .ui-dropdownchecklist-item
+, .ui-dropdownchecklist-item {
+    vertical-align: middle;
+    background: none repeat scroll 0 0 transparent;
+    border: none;
+    color: #353535;
+    height: 23px;
+    padding: 0;
+    white-space: nowrap;
+    width: 610px;
+    font: 12px Arial, Helvetica, sans-serif;
+    float: left;
+    text-align: left;
+}
+#autocompleteDiv .ui-dropdownchecklist-item
+, .ui-dropdownchecklist-item input {
+}
+#autocompleteDiv .ui-dropdownchecklist-group {
+    padding: 1px 2px 2px 2px;
+}
+#autocompleteDiv .ui-icon-triangle-1-e, #autocompleteDiv .ui-icon-triangle-1-s {
+	background-image: url(../images/bullet-form.gif);
+	background: url(../images/bullet-form.gif) no-repeat;
+	height: 25px;
+	width: 15px;
+	margin: -2px -1px 0 0;
+}
+
+.customLogo {
+    width: 240px;
+    height: 65px;
+    text-indent: -9999px;
+    margin: 0 0 10px;
+    float: left;
+}
+
+.customLogo div {
+    width: 250px;
+    height: 65px;
+}
+
+.customLogo div a img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.customLogoImg {
+	position: relative;
+    text-indent: -9999px;
+    margin: 11px 0 0;
+    float: left;
+}
+#autocompleteMessageDiv .ui-dropdownchecklist .ui-widget-content
+, .ui-dropdownchecklist .ui-widget-header {
+    border: none;
+    width: 820px;
+    border: 1px solid #CCC;
+}
+#autocompleteMessageDiv .ui-dropdownchecklist-indent {
+    padding-left: 7px;
+}
+/* Font size of 0 on the -selector and an explicit medium on -text required to eliminate
+   descender problems within the containers and still have a valid size for the text */
+#autocompleteMessageDiv .ui-dropdownchecklist-selector-wrapper
+, .ui-widget.ui-dropdownchecklist-selector-wrapper {
+    vertical-align: middle;
+    font-size: 0px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #B2B2B2;
+    width: 820px;
+    color: white;
+    height: 23px;
+}
+#autocompleteMessageDiv .ui-dropdownchecklist-selector {
+    background: none repeat scroll 0 0 transparent;
+    padding: 1px 2px 2px 2px;
+    font-size: 0px;
+    border: none;
+    color: white;
+}
+#autocompleteMessageDiv .ui-dropdownchecklist-text {
+    font-size: medium;
+    color: #353535;
+    float: left;
+    height: 15px;
+    font: 12px Arial, Helvetica, sans-serif;
+    padding: 4px 2px 4px 2px;
+    color: #353535;
+    white-space: nowrap;
+    text-align: left;
+}
+#autocompleteMessageDiv .ui-dropdownchecklist-dropcontainer {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: white;
+}
+#autocompleteMessageDiv .ui-dropdownchecklist-item
+, .ui-dropdownchecklist-item {
+    vertical-align: middle;
+    background: none repeat scroll 0 0 transparent;
+    border: none;
+    color: #353535;
+    height: 23px;
+    padding: 0;
+    white-space: nowrap;
+    width: 780px;
+    font: 12px Arial, Helvetica, sans-serif;
+    float: left;
+    text-align: left;
+}
+#autocompleteMessageDiv .ui-dropdownchecklist-item
+, .ui-dropdownchecklist-item input {
+}
+#autocompleteMessageDiv .ui-dropdownchecklist-group {
+    padding: 1px 2px 2px 2px;
+}
+#autocompleteMessageDiv .ui-icon-triangle-1-e, #autocompleteMessageDiv .ui-icon-triangle-1-s {
+    background-image: url(../images/bullet-form.gif);
+    background: url(../images/bullet-form.gif) no-repeat;
+    height: 25px;
+    width: 15px;
+    margin: -2px -1px 0 0;
+}
+
+/* Overwritten to get rid of top border input supplier details page in company attribute section*/
+.company-form {
+   border-top: 1px solid #FFFFFF;
+}
+
+
+.supplier-upload-logo {
+    background: url("../images/sprite.png") no-repeat scroll -465px -2897px transparent;
+    height: 23px;
+    margin: 0 0 -6px -6px;
+    padding: 6px 0 0 30px;
+    width: 39px;
+    color: #000000;
+    float: left;
+    font-size: 11px;
+    line-height: 13px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 10;
+    text-decoration: none;
+}
+
+
+.settings-form .alt-area .alt-select {width:180px;}
+
+.quote-error{
+    color: red !important;
+    display: block !important;
+    font-style: italic !important;
+    padding-left: 308px !important;
+    text-align: left !important;
+    vertical-align: top !important;
+    width: 420px !important;
+}
+
+#createUserForm label.error {
+    color: red;
+    display: block;
+    float: none;
+    font-style: italic;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+    width: 300px;
+}
+
+.add-supplier-attribute-summary-box {
+    width:350px;
+    margin:0 0 0 100px;
+    padding:4px 0 20px;
+}
+.settings-form .add-supplier-attribute-summary-box {
+	background: none;
+    width:350px;
+    margin:0 0 0 100px;
+    padding:4px 0 20px;
+}
+.add-supplier-attribute-summary-box .summary-table {
+    margin:0;
+    width:100%;
+}
+.add-supplier-attribute-summary-box .summary-table thead {
+    font-weight:bold;
+    color:#252525;
+}
+.add-supplier-attribute-summary-box .summary-table tfoot {
+    text-transform:uppercase;
+    color:#252525;
+}
+.add-supplier-attribute-summary-box .summary-table td {
+    padding:7px;
+}
+.add-supplier-attribute-summary-box .summary-table th {
+    font-weight:normal;
+    color:#708ba2;
+    padding:7px;
+}
+
+.tt-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 222px;
+}
+
+.tt-suggestion.tt-cursor {
+  background-color: #ccc;
+}

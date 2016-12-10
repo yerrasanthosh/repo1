@@ -1,0 +1,289 @@
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+    <definition name="main_template" template="/WEB-INF/views/main_template.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp" />
+        <put-attribute name="common_overlay" value="/WEB-INF/views/tiles/common_overlay.jsp" />
+    </definition>
+
+	<definition name="adminui_template" template="/WEB-INF/views/adminui_template.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp" />
+        <put-attribute name="common_overlay" value="/WEB-INF/views/tiles/common_overlay.jsp" />
+    </definition>
+
+    <definition name="login" template="/WEB-INF/views/tiles/login.jsp"/>
+    <definition name="searchResults" template="/WEB-INF/views/tiles/searchResults.jsp"/>
+
+    <definition name="item_detail" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/item_details.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/items_overlay.jsp" />
+    </definition>
+
+    <definition name="report_failure" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/errorReportFailure.jsp" />
+    </definition>
+
+    <definition name="landing" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/landing.jsp" />
+        <put-attribute name="overlay" value="" />
+    </definition>
+
+    <definition name="landing_frame" template="/WEB-INF/views/tiles/landing_frame.jsp" />
+
+    <definition name="help" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/help.jsp" />
+    </definition>
+
+    <definition name="contact" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/contact.jsp" />
+    </definition>
+
+    <definition name="policy" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/policy.jsp" />
+    </definition>
+
+    <definition name="home" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/home.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/index_overlay.jsp" />
+    </definition>
+	<definition name="materialGroup" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/material_group.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/index_overlay.jsp" />
+	</definition>
+    <definition name="catalog_detail" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/catalog_detail.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/details_overlay.jsp" />
+    </definition>
+
+    <definition name="profiles_management" extends="adminui_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/profile_management.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/profile_management_overlay.jsp" />
+    </definition>
+
+    <definition name="profiles_group_management" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/profile_group_management.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/profile_group_management_overlay.jsp" />
+    </definition>
+    
+
+    <definition name="create_profile" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/create_profile.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/create_profile_overlay.jsp" />
+    </definition>
+    
+    <definition name="create_profile_group" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/create_profile_group.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/create_profile_group_overlay.jsp" />
+    </definition>
+    
+    
+    <definition name="my_account_info" extends="adminui_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/myaccount.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/index_overlay.jsp" />
+    </definition>
+    
+    <definition name="edit_profile" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/edit_profile.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/edit_profile_overlay.jsp" />
+    </definition>
+
+    <definition name="profile_table_fragment" template="/WEB-INF/views/tiles/profile_table_fragment.jsp" />
+	
+	<definition name="profile_group_table_fragment" template="/WEB-INF/views/tiles/profile_group_table_fragment.jsp" />
+	<definition name="groups_ass_profiles_fragment" template="/WEB-INF/views/tiles/groups_ass_profiles_fragment.jsp" />
+	<definition name="groups_profile_fragment" template="/WEB-INF/views/tiles/group_profile_fragment.jsp" />
+	<definition name="profilegroup_mapping_table_fragment" template="/WEB-INF/views/tiles/profilegroup_mapping_table_fragment_both.jsp" />
+    <definition name="uom_mapping_table_fragment" template="/WEB-INF/views/tiles/uom_mapping_table_fragment_both.jsp" />
+    <definition name="power_shopper_table_fragment" template="/WEB-INF/views/tiles/power_shopper_table_fragment_both.jsp" />
+    <definition name="currency_mapping_table_fragment" template="/WEB-INF/views/tiles/currency_mapping_table_fragment_both.jsp" />
+    <definition name="profile_ass_catalogs_fragment" template="/WEB-INF/views/tiles/profile_ass_catalogs_fragment.jsp" />
+
+    <definition name="profile_catalog_fragment" template="/WEB-INF/views/tiles/profile_catalog_fragment.jsp" />
+
+	<definition name="group_profile_both_fragment" template="/WEB-INF/views/tiles/group_profile_both_fragment.jsp" />
+    <definition name="profile_catalog_both_fragment" template="/WEB-INF/views/tiles/profile_catalog_both_fragment.jsp" />
+
+    <definition name="system_definition_table_fragment" template="/WEB-INF/views/tiles/system_definition_table_fragment.jsp" />
+
+    <definition name="invalid_session" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/invalid_session.jsp" />
+    </definition>
+
+    <definition name="approver" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/create_approver.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/details_overlay.jsp" />
+    </definition>
+    
+    <definition name="user_management" extends="adminui_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/user_management.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/users_overlay.jsp" />
+    </definition>
+
+    <definition name="user_edit" extends="adminui_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/user_edit.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/user_edit_overlay.jsp" />
+    </definition>
+
+    <definition name="custom_fields" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/custom_fields.jsp" />
+        <put-attribute name="overlay" value="" />
+    </definition>
+
+    <definition name="create_custom_fields" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/create_custom_fields.jsp" />
+        <put-attribute name="overlay" value="" />
+    </definition>
+
+    <definition name="edit_custom_fields" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/edit_custom_fields.jsp" />
+        <put-attribute name="overlay" value="" />
+    </definition>
+
+	<definition name="user_details_section" template="/WEB-INF/views/tiles/user_details_section.jsp" />
+	
+	<definition name="user_edit_profiles" template="/WEB-INF/views/tiles/user_edit_profiles.jsp" />
+
+    <definition name="associate_catalogs" template="/WEB-INF/views/tiles/associate_catalogs.jsp" />
+    
+    <definition name="announcements_section" template="/WEB-INF/views/tiles/announcements_section.jsp" />
+
+    <definition name="information_section" template="/WEB-INF/views/tiles/information_section.jsp" />
+
+    <definition name="messages_section" template="/WEB-INF/views/tiles/messages_section.jsp" />
+
+    <definition name="company_default_sec" template="/WEB-INF/views/tiles/company_default_sec.jsp" />
+
+    <definition name="faq_section" template="/WEB-INF/views/tiles/faq_section.jsp" />
+
+    <definition name="policy_section" template="/WEB-INF/views/tiles/policy_section.jsp" />
+
+    <definition name="contact_section" template="/WEB-INF/views/tiles/contact_section.jsp" />
+
+	<definition name="user_add_profiles" template="/WEB-INF/views/tiles/user_add_profiles.jsp" />
+
+    <definition name="profiles_detail_section" template="/WEB-INF/views/tiles/details_profiles_section.jsp" />
+
+    <definition name="work_flow_section" template="/WEB-INF/views/tiles/work_flow_section.jsp" />
+
+    <definition name="catalog_profile_both_fragment" template="/WEB-INF/views/tiles/catalog_profile_both_fragment.jsp" />
+
+    <definition name="catalog_notass_profiles_fragment" template="/WEB-INF/views/tiles/catalog_notass_profiles_fragment.jsp" />
+
+    <definition name="custom_field_section" template="/WEB-INF/views/tiles/custom_field_section.jsp" />
+
+    <definition name="manage_custom_field_section" template="/WEB-INF/views/tiles/manage_custom_field_section.jsp" />
+    
+    <definition name="light_box_catalogs" template="/WEB-INF/views/tiles/light_box_catalogs.jsp" />
+
+    <definition name="ass_custom_field_section" template="/WEB-INF/views/tiles/ass_custom_field_section.jsp" />
+    <definition name="associate_attachments" template="/WEB-INF/views/tiles/associate_attachments.jsp" />
+
+    <definition name="details_property_section" template="/WEB-INF/views/tiles/details_property_section.jsp" />
+
+    <definition name="details_approvers_section" template="/WEB-INF/views/tiles/details_approvers_section.jsp" />
+
+    <definition name="catalogitem_table_fragment" template="/WEB-INF/views/tiles/catalogitem_table_fragment.jsp" />
+    <definition name="ass_item_custom_field_section" template="/WEB-INF/views/tiles/ass_item_custom_field_section.jsp" />
+    
+    
+    <definition name="materialgroup_mapping_table_fragment" template="/WEB-INF/views/tiles/materialgroup_mapping_table_fragment.jsp" />
+    <definition name="suppliermapping_table_fragment" template="/WEB-INF/views/tiles/suppliermapping_table_fragment.jsp" />
+    <definition name="supplierdetails_suppliermapping_table_fragment" template="/WEB-INF/views/tiles/supplier_details_mapping_section_table_fragment.jsp" />
+    <definition name="supplier_detail_contentview" template="/WEB-INF/views/tiles/supplier_detail_contentview.jsp" />
+
+    <definition name="catalog_div_fragment" template="/WEB-INF/views/tiles/catalog_div_fragment.jsp" />
+
+    <definition name="supplier_management" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/supplier_management.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/supplier_overlay.jsp" />
+    </definition>
+
+    <definition name="supplier_table_fragment" template="/WEB-INF/views/tiles/supplier_table_fragment.jsp" />
+    <definition name="supplier_content_view" template="/WEB-INF/views/tiles/supplier_content_view.jsp" />
+
+    <definition name="Failure" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/failure.jsp" />
+    </definition>
+
+    <definition name="create_supplier" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/create_supplier.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/create_vendor_id_overlay.jsp" />
+    </definition>
+    <definition name="edit_supplier" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/edit_supplier.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/create_vendor_id_overlay.jsp" />
+    </definition>
+
+    <definition name="vendor_mapping" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/vendor_mapping.jsp" />
+        <put-attribute name="overlay" value="" />
+    </definition>
+
+    <definition name="company_attributes" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/company_attributes.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/create_vendor_id_overlay.jsp" />
+    </definition>
+    
+    <definition name="content_settings" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/content_settings.jsp" />
+        <put-attribute name="overlay" value="" />
+    </definition>
+
+    <definition name="data_mapping" extends="adminui_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/data_mapping.jsp" />
+        <put-attribute name="overlay" value="" />
+    </definition>
+    
+    <definition name="power_shopper" extends="adminui_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/power_shopper.jsp" />
+        <put-attribute name="overlay" value="" />
+    </definition>
+
+    <definition name="supplier_detail" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/supplier_detail.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/supplier_detail_overlay.jsp" />
+    </definition>
+
+
+    <definition name="company_user_view" template="/WEB-INF/views/tiles/company_user_view.jsp" />
+    <definition name="system_vendor_view" template="/WEB-INF/views/tiles/system_vendor_view.jsp" />
+    <definition name="company_attributes_view" template="/WEB-INF/views/tiles/company_attributes_view.jsp" />
+    <definition name="associate_company_attribute" template="/WEB-INF/views/tiles/associate_company_attribute.jsp" />
+
+    <definition name="supplier_attribute_management" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/supplier_attribute_management.jsp" />
+        <put-attribute name="overlay" value="/WEB-INF/views/tiles/supplier_attribute_overlay.jsp" />
+    </definition>
+
+    <definition name="supplier_attribute_table_fragment" template="/WEB-INF/views/tiles/supplier_attribute_table_fragment.jsp" />
+    <definition name="supplier_logo_fragment" template="/WEB-INF/views/tiles/supplier_logo_fragment.jsp" />
+
+    <definition name="catalog_approvers_both_fragment" template="/WEB-INF/views/tiles/catalog_approvers_both_fragment.jsp" />
+
+    <definition name="supplier_users_fragment" template="/WEB-INF/views/tiles/supplier_users_fragment.jsp" />
+    <definition name="supplier_approvers_fragment" template="/WEB-INF/views/tiles/supplier_approvers_fragment.jsp" />
+    <definition name="supplier_non_approvers_fragment" template="/WEB-INF/views/tiles/supplier_non_approvers_fragment.jsp" />
+    <definition name="supplier_approvers_both_fragment" template="/WEB-INF/views/tiles/supplier_approvers_both_fragment.jsp" />
+
+    <definition name="supplier_attribute_create" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/supplier_attribute_create.jsp" />
+        <put-attribute name="overlay" value="" />
+    </definition>
+	 <definition name="reports" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/reports.jsp" />
+        <put-attribute name="overlay" value="" />
+    </definition>
+	
+	<definition name="download" template="/WEB-INF/views/download.jsp" />
+
+    <definition name="reports" extends="main_template">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/reports.jsp" />
+        <put-attribute name="overlay" value="" />
+    </definition>
+	<definition name="custom_help_content_section" template="/WEB-INF/views/tiles/custom_help_content_section.jsp" />
+</tiles-definitions>

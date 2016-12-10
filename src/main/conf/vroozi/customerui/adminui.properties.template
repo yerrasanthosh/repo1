@@ -1,0 +1,178 @@
+#Catalog data
+file.processed.path = /usr/local/src/v2-setup/workdir/catalog-upload-temp/processed/
+file.error.reportPath=/usr/local/src/v2-setup/workdir/catalog-upload-temp/reports
+fileUploadPath=/usr/local/src/v2-setup/workdir/catalog-upload-files
+itemImagesPath=/usr/local/src/v2-setup/workdir/catalog-upload-images/output
+itemAttachmentsPath=/usr/local/src/v2-setup/workdir/attachments
+flagIconUploadPath =/usr/local/src/v2-setup/workdir/catalog-upload-icons
+fileUploadTempPath=/usr/local/src/v2-setup/workdir/catalog-upload-temp
+
+fileUploadMaxSize=524288000
+maxPostFilters = 15
+
+catalogServiceURI=http://localhost:8080/catalog/api
+catalogItemsPath=${catalogServiceURI}/catalogs/
+updateItemStatusServicePath=${catalogItemsPath}/updateStatus/
+catalogListServicePath=/catalogs/
+saveCatalogServicePath=/catalogs/staging
+editCatalogServicePath=/catalogs/{catalogId}
+catalogProfilePath=/profiles
+catalogApproverPath=/approvers
+catalogPropertyPath=/property
+catalogUserPath=/users
+supplierCompanyURI=/suppliers
+attachmentsURI=/attachments
+imagesURI=/images
+
+#User Data Service
+uomMappingPath=/uomMapping
+userDataServiceURI=http://localhost:8080/userDataService/api
+userPath=${userDataServiceURI}/user
+findUserURI=${userDataServiceURI}/users/find
+companyDataServicePath=${userDataServiceURI}/companies
+accessControlListURI=${userDataServiceURI}/organizations/{unitid}/roles/{roleid}/acls
+#Shopping Cart Service
+shoppingCartServiceURI=http://localhost:8080/shoppingCartService/shoppingCart/
+
+#oci
+smartOCIAppBaseURI=http://localhost:8080/oci/
+
+
+materialGroupURI = ${catalogServiceURI}/materialgroup
+materialGroupMappingStatusPath = /status/all/unitid/{unitId}
+materialGroupMappingErrorStatusPath = /errorreport/unitid/{unitId}
+saveMaterialGroupURI = /upload
+findMaterialGroupURI = /find
+findMaterialGroupMappingPaginationURI = /unitid/{unitId}?pageNumber={pageNumber}&pageSize={pageSize}&searchTerm={searchTerm}
+countMaterialGroupMappingsURI = /count/unitid/{unitId}?searchTerm={searchTerm}
+
+catalogServiceSearchPath=/search
+searchByUnitIdPath = /productoffers/unitid/{unitid}?keyword={keyword}
+
+#supplierMapping
+supplierMappingURI = ${catalogServiceURI}/vendormapping
+supplierMappingStatusPath = /status/all/unitid/{unitId}
+uploadSupplierMapping = /upload
+findSupplierMappingPaginationURI = /existingSupplier
+countSupplierMappingsURI = /count
+checkMappingURI = /exists/uniquesupplierid/{uniquesupplierid}?supplierid={supplierId}&uniquesystemid={uniquesystemid}
+addMappingURI = /add
+deleteSupplierMappingURI = /delete/mappingid/{mappingId}
+
+#search api
+searchApiBaseURI = http://localhost:8080/search/api
+
+#authenticate api
+
+ssoPath=https://betav2-signin.vroozi.com/sso
+loginURI=/login
+logoutURI=/logout
+loginDataServiceURI=http://localhost:8080/authenticationapi
+forgotPasswordPath=/forgot-password
+authenticatePath=/authenticate
+userSessionDataPath=/user-session-data
+redirectToHttps=false
+
+encryption.aes.key=InmbuvP6Z8Inmbuv
+
+cookieVSD= betav2_vsd
+cookieDomain =.vroozi.com
+vsdCookieMaxAge=86400
+
+#notification api
+notificationApiBaseURI = http://localhost:8080/notificationapi
+notificationPath =/email
+
+
+environment.url=https://betav2-signin.vroozi.com/adminui/login
+
+#cXML Punch out
+
+cXMLPunchOutUrl = https://betav2-signin.vroozi.com/gateway/api/cxml/external/punchout
+
+#falcon
+
+purchaseRequestURI = https://betav2-purchase.vroozi.com/#requests
+messageCenterURI = https://betav2-messages.vroozi.com/message-center
+shopperURI=https://betav2-shop.vroozi.com/shopper
+
+ereq=false
+
+
+uomMappingStatus = /uommappings/status/unitid/{unitid}
+uomMappingUpload=/upload
+uomMappingPage = /uommappings/unitid/{unitId}?pageNumber={pageNumber}&pageSize={pageSize}&searchTerm={searchTerm}
+uomMappingCount = /mappingscount/unitid/{unitId}?searchTerm={searchTerm}
+uomPage = /page/unitid/{unitId}?pageNumber={pageNumber}&pageSize={pageSize}&searchTerm={searchTerm}&sortColumn={sortColumn}&assending={assending}
+
+
+profileGroupPath=/profileGroups
+
+profileGroupMappingStatus = /mappings/status/unitid/{unitid}
+profileGroupMappingUpload = /upload
+profileGroupMappingPage = /mappings/unitid/{unitId}?pageNumber={pageNumber}&pageSize={pageSize}&searchTerm={searchTerm}
+profileGroupMappingCount = /mappingscount/unitid/{unitId}?searchTerm={searchTerm}
+profileGroupPage = /page/unitid/{unitId}?pageNumber={pageNumber}&pageSize={pageSize}&searchTerm={searchTerm}&sortColumn={sortColumn}&assending={assending}
+
+welcomeImageUploadSize=307200
+
+noImageWidth=125
+noImageHeight=95
+userBatch=/usersbatch
+tempUser = /tempuser
+updateMappingURI = /update
+updateTempUser = /updatetempuser
+downloadSupplierMappingURI =${catalogServiceURI}/downloadvendormapping
+export.file.path=/usr/local/src/v2-setup/workdir/catalog-upload-temp/exported
+exportCatalogPath=/exportcatalog/
+catalogChangeHistoryPath=/changereport/
+exportedCatalogPath=/exportedPath
+catalog.schedule.dateFormat=MM/dd/yyyy HH:mm
+
+contentAccessURI=/contentaccess
+deleteContentAccessURI=/deletecontentaccess
+downloadContentAccessURI=/downloadcontentaccess
+downloadUOMMappingURI=/downloadUOMMapping
+userProfiles = /profiles/userprofiles
+
+
+
+supplierBulkUploadURI = ${userDataServiceURI}/supplierBulkUpload
+supplierBulkUploadStatusPath = /status/all/unitid/{unitId}
+supplierBulkUpload = /bulkUpload
+findSupplierBulkUploadPaginationURI = /unitid/{unitId}?pageNumber={pageNumber}&pageSize={pageSize}&searchTerm={searchTerm}&uniquesupplierid={uniquesupplierid}
+downloadSupplierBulkUploadURI = ${userDataServiceURI}/supplierBulkUpload/downloadsuppliers/unitid/{unitid}?filename={filename}
+countSupplierBulkUploadURI = /count/unitid/{unitId}?searchTerm={searchTerm}
+
+
+currencyMappingPath = /currencymappings
+currencyMappingStatus = /status/unitid/{unitid}
+currencyMappingUpload=/upload
+currencyMappingPage = /unitid/{unitId}?pageNumber={pageNumber}&pageSize={pageSize}&searchTerm={searchTerm}
+currencyMappingCount = /count/unitid/{unitId}?searchTerm={searchTerm}
+downloadCurrencyMappingURI=/download
+
+#Reporting API
+reportingApiURI=http://localhost:8884/reports
+spendByCategoryURI=/spending/category/{unitId}
+categorySpendingURI=/spending/category/list/{unitId}
+spendTotalByCategoryURI=/spending/category/{unitId}/oci
+spendTotalByShopperAndCategoryURI=/spending/category/{unitId}/user/{userId}/oci
+spendBySupplierURI=/supplier/spending/{unitId}
+spendByCatalogTypeURI=/spending/catalog/{unitId}
+spendByMonthURI=/spending/monthly/{unitId}
+
+#power Shopper 
+contentShareMappingsURI= ${userDataServiceURI}/content-share-mappings
+findContentShareMappingsURI = ${contentShareMappingsURI}?unitId={unitId}&currentPage={pageNumber}&pageSize={pageSize}&searchText={searchTerm}&username={userName}
+updateContentShareMappingURI= ${contentShareMappingsURI}/{id}
+deleteContentShareMappingsURI=${contentShareMappingsURI}/multi-delete
+uploadContentShareMappingURI=${contentShareMappingsURI}/upload
+contentShareMappingStatusURI=${contentShareMappingsURI}/status/{unitid}
+generateContentShareMappingFileURI=${contentShareMappingsURI}/download/{unitid}?filename={filename}
+userURI=${userDataServiceURI}/users
+userByUsernameURI=${userURI}?unitid={unitId}&username={userName}
+updateUserSpecificKeysURI=${userURI}/{userId}
+findContentShareMappingByUserNameURI=${userDataServiceURI}/content-share-mappings/username?username={username}
+
+purchase.express.enabled=true

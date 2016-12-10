@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SmartOCI</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../css/colorbox.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="../css/all.css" />
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../js/jcf.js"></script>
+    <script type="text/javascript" src="../js/jcf.scrollable.js"></script>
+    <script type="text/javascript" src="../js/jquery.main.js"></script>
+    <script type="text/javascript" src="../js/jcf.select.js"></script>
+    <script type="text/javascript" src="../js/jcf.file.js"></script>
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css" /><![endif]-->
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+    <div class="holder">
+        <div class="panel">
+            <strong class="logo"><a href="#">SmartOCI Defining B2b Commerce</a></strong>
+            <ul class="add-nav">
+                <li>
+                    <a class="user" href="#">Welcome,<strong>USERNAME</strong></a>
+                    <ul>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Selected</a></li>
+                        <li><a href="#">Lorem</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Messages (0)</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a class="cart" href="#">Cart: 0 Items ($0.00)</a></li>
+            </ul>
+            <form action="#" class="search-form">
+                <fieldset>
+                    <label for="text-field">SEARCH</label>
+                    <input id="text-field" type="text" value="" />
+                    <select>
+                        <option selected="selected">Catalog Manager</option>
+                        <option>Ather Catalog</option>
+                    </select>
+							<span class="input-button">
+								<input type="submit" value="Submit" />
+								<span class="loading"></span>
+							</span>
+                    <a href="#" class="link">Advanced Search</a>
+                </fieldset>
+            </form>
+        </div>
+        <ul id="nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SHOPPING CART</a></li>
+            <li><a href="#">STATISTICS</a></li>
+            <li><a href="#">FAVORITES</a></li>
+            <li><a href="#" class="active">MANAGE</a></li>
+        </ul>
+    </div>
+</div>
+<div id="main">
+<div class="section">
+    <ul class="breadcrumbs">
+        <li><a href="#">smartOCI</a></li>
+        <li>Supplier Managment</li>
+    </ul>
+    <div class="video-btn-holder">
+        <img src="../images/img-1.gif" alt="" width="26" height="27" />
+        <a href="#" class="btn"><span><em>Help video</em></span></a>
+    </div>
+</div>
+<div class="main-holder">
+<div id="content">
+<h1>Supplier Attributes</h1>
+<div class="content-block toggle-block active" id="summary-section">
+    <div class="headline">
+        <h2><a href="#" class="open-close">Supplier attributes summary</a></h2>
+    </div>
+    <div class="block">
+        <div class="content">
+            <div class="summary-box alt">
+                <table class="summary-table">
+                    <thead>
+                    <tr>
+                        <td class="a-center sep view">View</td>
+                        <td>Summary</td>
+                        <td></td>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <td colspan="2">Total:</td>
+                        <td class="a-right">18</td>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    <tr>
+                        <td class="a-center view"><input id="st1" type="checkbox" checked="checked" /><label for="st1"></label></td>
+                        <th>Active Profiles:</th>
+                        <td class="a-right">15</td>
+                    </tr>
+                    <tr>
+                        <td class="a-center view"><input id="st2" type="checkbox" checked="checked" /><label for="st2"></label></td>
+                        <th>Inactive Profiles:</th>
+                        <td class="a-right">3</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-block toggle-block active alt" id="info-section">
+<div class="headline">
+    <h2><a href="#" class="open-close">Supplier attributes</a></h2>
+</div>
+<div class="block">
+<div class="content editable-widget">
+<div class="top-box">
+    <div class="btn-holder">
+        <a class="btn-add-attribute" href="#"><span><em>ADD</em></span></a>
+    </div>
+    <form action="#" class="form-sort">
+        <fieldset>
+            <label>Status:</label>
+            <select>
+                <option>All</option>
+            </select>
+            <label>Sort By: </label>
+            <select>
+                <option>Name</option>
+            </select>
+        </fieldset>
+    </form>
+</div>
+<table class="table-data alt-table-data">
+<thead>
+<tr>
+    <th class="td-select"><input type="checkbox" class="check-allbox" name="check-all3" id="check3-1" /><label for="check3-1"></label></th>
+    <th class="a-left">ICON</th>
+    <th class="a-left">ATTRIBUTE name</th>
+    <th>DESCRIPTION</th>
+    <th>STATUS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td class="td-select"><input type="checkbox" class="target-chbox" name="check3" id="check3-2" /><label for="check3-2"></label></td>
+    <td class="td-icon">
+        <div class="current-icon"><img alt="image description" src="../images/icon-green.png" width="15" height="15" /></div>
+        <div class="file-button">
+            <input type="file" />
+        </div>
+    </td>
+    <td class="a-left td-attribute-name">
+        <div class="field">
+            <span><a href="#">Green</a></span>
+            <input type="text" value="Green" />
+            <em></em>
+        </div>
+    </td>
+    <td class="td-description-att">
+        <div class="field">
+            <span>Environmentally friendly company</span>
+            <input type="text" value="Environmentally friendly company" />
+            <em></em>
+        </div>
+    </td>
+    <td>Active</td>
+</tr>
+<tr>
+    <td class="td-select"><input type="checkbox" class="target-chbox" name="check3" id="check3-3" /><label for="check3-3"></label></td>
+    <td class="td-icon">
+        <div class="current-icon"><img alt="image description" src="../images/icon-hz.png" width="15" height="15" /></div>
+        <div class="file-button">
+            <input type="file" />
+        </div>
+    </td>
+    <td class="a-left td-attribute-name">
+        <div class="field">
+            <span><a href="#">Hubzone.</a></span>
+            <input type="text" value="Hubzone." />
+            <em></em>
+        </div>
+    </td>
+    <td class="td-description-att">
+        <div class="field">
+            <span>Hubzone - Lorem ipsum dolor</span>
+            <input type="text" value="Hubzone - Lorem ipsum dolor" />
+            <em></em>
+        </div>
+    </td>
+    <td>Active</td>
+</tr>
+<tr>
+    <td class="td-select"><input type="checkbox" class="target-chbox" name="check3" id="check3-4" /><label for="check3-4"></label></td>
+    <td class="td-icon">
+        <div class="current-icon"><img alt="image description" src="../images/icon-mo.png" width="15" height="15" /></div>
+        <div class="file-button">
+            <input type="file" />
+        </div>
+    </td>
+    <td class="a-left td-attribute-name">
+        <div class="field">
+            <span><a href="#">Minority Owned</a></span>
+            <input type="text" value="Minority Owned" />
+            <em></em>
+        </div>
+    </td>
+    <td class="td-description-att">
+        <div class="field">
+            <span>Owned by a minority group</span>
+            <input type="text" value="Owned by a minority group" />
+            <em></em>
+        </div>
+    </td>
+    <td>Active</td>
+</tr>
+<tr>
+    <td class="td-select"><input type="checkbox" class="target-chbox" name="check3" id="check3-5" /><label for="check3-5"></label></td>
+    <td class="td-icon">
+        <div class="current-icon"><img alt="image description" src="../images/icon-preferred.png" width="15" height="15" /></div>
+        <div class="file-button">
+            <input type="file" />
+        </div>
+    </td>
+    <td class="a-left td-attribute-name">
+        <div class="field">
+            <span><a href="#">Preferred Contract</a></span>
+            <input type="text" value="Preferred Contract" />
+            <em></em>
+        </div>
+    </td>
+    <td class="td-description-att">
+        <div class="field">
+            <span>Preferred Supplier with Contract</span>
+            <input type="text" value="Preferred Supplier with Contract" />
+            <em></em>
+        </div>
+    </td>
+    <td>Active</td>
+</tr>
+<tr>
+    <td class="td-select"><input type="checkbox" class="target-chbox" name="check3" id="check3-6" /><label for="check3-6"></label></td>
+    <td class="td-icon">
+        <div class="current-icon"><img alt="image description" src="../images/icon-dv.png" width="15" height="15" /></div>
+        <div class="file-button">
+            <input type="file" />
+        </div>
+    </td>
+    <td class="a-left td-attribute-name">
+        <div class="field">
+            <span><a href="#">Service Disabled Veteran</a></span>
+            <input type="text" value="Service Disabled Veteran" />
+            <em></em>
+        </div>
+    </td>
+    <td class="td-description-att">
+        <div class="field">
+            <span>Supporting Disabled Veterans</span>
+            <input type="text" value="Supporting Disabled Veterans" />
+            <em></em>
+        </div>
+    </td>
+    <td>Active</td>
+</tr>
+<tr>
+    <td class="td-select"><input type="checkbox" class="target-chbox" name="check3" id="check3-7" /><label for="check3-7"></label></td>
+    <td class="td-icon">
+        <div class="current-icon"><img alt="image description" src="../images/icon-tier-2.png" width="15" height="15" /></div>
+        <div class="file-button">
+            <input type="file" />
+        </div>
+    </td>
+    <td class="a-left td-attribute-name">
+        <div class="field">
+            <span><a href="#">Tier II Contract</a></span>
+            <input type="text" value="Tier II Contract" />
+            <em></em>
+        </div>
+    </td>
+    <td class="td-description-att">
+        <div class="field">
+            <span>Tier II Drop Supplier</span>
+            <input type="text" value="Tier II Drop Supplier" />
+            <em></em>
+        </div>
+    </td>
+    <td>Active</td>
+</tr>
+<tr>
+    <td class="td-select"><input type="checkbox" class="target-chbox" name="check3" id="check3-8" /><label for="check3-8"></label></td>
+    <td class="td-icon">
+        <div class="current-icon"><img alt="image description" src="../images/icon-vo.png" width="15" height="15" /></div>
+        <div class="file-button">
+            <input type="file" />
+        </div>
+    </td>
+    <td class="a-left td-attribute-name">
+        <div class="field">
+            <span><a href="#">Veteran Owned</a></span>
+            <input type="text" value="Veteran Owned" />
+            <em></em>
+        </div>
+    </td>
+    <td class="td-description-att">
+        <div class="field">
+            <span>Service Person Owned Company</span>
+            <input type="text" value="Service Person Owned Company" />
+            <em></em>
+        </div>
+    </td>
+    <td>Active</td>
+</tr>
+<tr>
+    <td class="td-select"><input type="checkbox" class="target-chbox" name="check3" id="check3-9" /><label for="check3-9"></label></td>
+    <td class="td-icon">
+        <div class="current-icon"><img alt="image description" src="../images/icon-wo.png" width="15" height="15" /></div>
+        <div class="file-button">
+            <input type="file" />
+        </div>
+    </td>
+    <td class="a-left td-attribute-name">
+        <div class="field">
+            <span><a href="#">Woman Owned</a></span>
+            <input type="text" value="Woman Owned" />
+            <em></em>
+        </div>
+    </td>
+    <td class="td-description-att">
+        <div class="field">
+            <span>Company owned by Woman</span>
+            <input type="text" value="Company owned by Woman" />
+            <em></em>
+        </div>
+    </td>
+    <td>Active</td>
+</tr>
+</tbody>
+</table>
+<div class="bottom-data">
+    <div class="pager">
+        <span>Page 1 of 87 </span>
+        <ul>
+            <li><a href="#" class="btn-prev"></a></li>
+            <li><a href="#" class="btn-next"></a></li>
+        </ul>
+    </div>
+    <strong class="pages">Total Records: 1-10 of 87</strong>
+</div>
+<div class="function">
+    <ul>
+        <li><a class="ico-delete open-popup cboxElement" href="#delete"><span><em>DELETE</em></span></a></li>
+        <li><a class="ico-activate" href="#"><span><em>ACTIVATE</em></span></a></li>
+        <li><a class="ico-deactivate" href="#"><span><em>DeACTIVATE</em></span></a></li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="sidebar">
+    <ul class="sub-nav">
+        <li><a href="index.html" class="ico-back"><span>BACK</span></a></li>
+    </ul>
+    <h3>JUMP TO</h3>
+    <ul class="sub-nav">
+        <li><a href="#" class="ico-attributes"><span>Supplier Attributes</span></a></li>
+    </ul>
+</div>
+</div>
+</div>
+<div id="footer">
+    <ul class="menu">
+        <li class="logotype">
+            <a href="#"><img alt="image description" src="../images/logo-vroozi.png" width="85" height="17" /></a>
+            <span class="sep"></span>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Ipsum</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="copyright">Copyright &copy; 2016 Vroozi. All rights reserved. <span class="sep"></span>
+        <div class="support">
+            <a href="#">Support Release: 1.4.9 build 023a</a>
+            <div class="popup">
+                <div class="holder">
+                    <div class="frame">
+                        <h3 class="title">Release notes:</h3>
+                        <p>Short blurb about updates:</p>
+                        <ul>
+                            <li><a href="#">Miscellaneous bug fixes</a></li>
+                            <li><a href="#">Account Status bug Fixed</a></li>
+                            <li><a href="#">New feature cards for Admin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="lightbox-section">
+    <div class="lightbox lightbox-small" id="delete">
+        <div class="holder">
+            <div class="frame">
+                <div class="title">
+                    <a href="#" class="close">Close</a>
+                    <h2>Deletion Confirmation</h2>
+                </div>
+                <div class="content">
+                    <p>Please click "DELETE" to confirm that you would like to remove the selected item(s).</p>
+                    <p><strong>[lorem ipsum dolor sit amet]</strong></p>
+                </div>
+                <div class="btns-holder">
+                    <div class="btns-frame">
+                        <a href="#" class="btn btn-red"><span>DELETE</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
